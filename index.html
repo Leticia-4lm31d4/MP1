@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/home.css">
 
     <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
     <title>Rotas de ônibus</title>
@@ -31,7 +32,13 @@
         <nav class="menu">
              <ul> <!-- Menu de navegação -->
                  <li><a href="./index.html">Home</a></li>
-                 <li><a href="#">Rotas</a></li>
+                 <div class="dropdown">
+                    <button class="dropbtn">Rotas</button>
+                    <div class="dropdown-content">
+                      <a href="#">Itinerários</a>
+                      <a href="./cadastro.html">Cadastro de itinerários</a>
+                    </div>
+                  </div> 
                  <li><a href="#">História</a></li>
                  <li><a href="#">Cartão</a></li>
                  <li><a href="#">Transparência</a></li>
@@ -40,7 +47,75 @@
     </header>
 
     <!-- CONTEÚDO DA PÁGINA HOME -->
-
+    <section>
+        <h1>Linhas de ônibus mais utilizadas</h1>
+    
+        <div class="container">
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>06 - Nova Miami</h3>
+                <p>Região da Cidade: Sul</p>
+                <p>Principais Pontos: <br>Terminal Grená - Ocean Drive</p>
+                <p>Horários de Saída: 09:00, 12:00, 15:00</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>13 - German Park</h3>
+                <p>Região da Cidade: Leste</p>
+                <p>Principais Pontos: <br>Terminal Folclore - German Park</p>
+                <p>Horários de Saída: 08:00, 10:15, 12:00</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>23 - Cidade do Rei</h3>
+                <p>Região da Cidade: Oeste</p>
+                <p>Principais Pontos: <br>Terminal Alvinegro - Akron</p>
+                <p>Horários de Saída: 10:20, 14:30, 18:00</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>27 - UFSCar</h3>
+                <p>Região da Cidade: Norte</p>
+                <p>Principais Pontos: <br>Terminal Caffé - UFSCar</p>
+                <p>Horários de Saída: 06:00, 09:35, 12:25</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>30 - Vila das Cestas</h3>
+                <p>Região da Cidade: Leste</p>
+                <p>Principais Pontos: <br>Terminal Folclore - Golden Gate</p>
+                <p>Horários de Saída: 18:50, 20:00, 22:00</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>44 - Quintais do Patrão</h3>
+                <p>Região da Cidade: Sul</p>
+                <p>Principais Pontos: <br>Terminal Grená - Petronas</p>
+                <p>Horários de Saída: 07:20, 16:30, 20:40</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>51 - Viajante do Mundo</h3>
+                <p>Região da Cidade: Oeste</p>
+                <p>Principais Pontos: <br>Terminal Alvinegro - Larangeiras</p>
+                <p>Horários de Saída: 05:20, 10:00, 15:15</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>71 - Jardim de Malta</h3>
+                <p>Região da Cidade: Norte</p>
+                <p>Principais Pontos: <br>Terminal Caffé - São Januário</p>
+                <p>Horários de Saída: 10:50, 15:35, 20:00</p>
+            </div>
+            <div class="card">
+                <img src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="24">
+                <h3>99 - Vegetti</h3>
+                <p>Região da Cidade: Oeste</p>
+                <p>Principais Pontos: <br>Terminal Alvinegro - Bosque Castelo</p>
+                <p>Horários de Saída: 11:00, 16:25, 21:40</p>
+            </div>
+        </div>
+    </section>
     <!-- FIM DO CONTEÚDO DA PÁGINA HOME -->
 
     <footer>

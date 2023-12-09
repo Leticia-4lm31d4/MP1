@@ -68,10 +68,51 @@ header nav ul li a {
 }
 
 header nav a:hover,
-header nav a.active {
-  background-color: #FFE31E;
+header nav a.active,
+.dropdown:hover,
+.dropbtn {
+  background-color: #ffd30f;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 0.625rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd30f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
