@@ -73,7 +73,23 @@ header nav a:hover,
 header nav a.active,
 .dropdown:hover,
 .dropbtn {
-  background-color: #FFE31E;
+  background-color: #ffd30f;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 0.625rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 .dropdown {
