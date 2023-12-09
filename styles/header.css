@@ -108,7 +108,7 @@ header nav a.active,
 }
 
 .dropdown-content a:hover {
-    background-color: #ffd30f;
+    background-color: #c3c0c0;
 }
 
 .dropdown:hover .dropdown-content {
