@@ -16,7 +16,7 @@ header {
     padding: 2rem 8rem;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #F7E378ff;
     z-index: 10;
 }
 
@@ -71,7 +71,7 @@ header nav a:hover,
 header nav a.active,
 .dropdown:hover,
 .dropbtn {
-  background-color: #ffd30f;
+  background-color: white;
 }
 
 .dropdown {

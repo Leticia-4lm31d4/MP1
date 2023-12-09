@@ -48,6 +48,23 @@
     <section>
         <h1>Cadastro de Itinerário</h1>
 
+        <div class="container">
+            <form>
+                <label for="nomeLinha">Nome da Linha:</label>
+                <input type="text" id="nomeLinha" name="nomeLinha" required>
+        
+                <label for="regiao">Região da Cidade:</label>
+                <input type="text" id="regiao" name="regiao" required>
+        
+                <label for="principaisPontos">Pontos de Parada:</label>
+                <textarea id="principaisPontos" placeholder="Insira aqui cada ponto de parada." name="principaisPontos" rows="5" required></textarea>
+        
+                <label for="horarios">Horários de Saída:</label>
+                <textarea placeholder="Insira aqui cada horário de saída." name="horarios" rows="3" required></textarea>
+        
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
     </section>
     <!-- FIM DO CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
 
