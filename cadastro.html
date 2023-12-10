@@ -68,16 +68,20 @@
                 </div>
             
                 <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
-            </div>
+                </div>
         
+                <div class="container-p">
+                <div id="horarios">
                 <label for="horarios">Horários de Saída:</label>
-                <textarea placeholder="Digite cada horáiro de saída separados por vírgula. Por exemplo:
-08:00, 10:00, 23:00" name="horarios" rows="3" required></textarea>
-        
+                    <div class="horario-container">
+                        <input type="text" name="horario[]" placeholder="Digite o horário" required>
+                        <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                    </div>
+                </div>
+                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+            </div>
                 <button type="submit">Cadastrar</button>
-
             </form>
-
         </div>
     </section>
     <!-- FIM DO CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
@@ -110,8 +114,6 @@
             </p>
         </div>
     </footer>
-
-    
 
 </body>
 </html>

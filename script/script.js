@@ -27,3 +27,34 @@ function removerParada(element) {
     const paradaRemovida = element.parentNode;
     paradasContainer.removeChild(paradaRemovida);
 }
+
+function adicionarHorario() {
+    const horariosContainer = document.getElementById('horarios');
+    const novoHorario = document.createElement('div');
+    novoHorario.classList.add('horario-container');
+
+    const inputHorario = document.createElement('input');
+    inputHorario.type = 'text';
+    inputHorario.name = 'horario[]';
+    inputHorario.placeholder = 'Digite o horário';
+    inputHorario.required = true;
+
+    const btnRemover = document.createElement('button');
+    btnRemover.type = 'button';
+    btnRemover.classList.add('btn-remove');
+    btnRemover.textContent = '-';
+    btnRemover.addEventListener('click', function() {
+        removerHorario(this);
+    });
+
+    novoHorario.appendChild(inputHorario);
+    novoHorario.appendChild(btnRemover);
+
+    horariosContainer.appendChild(novoHorario);
+}
+
+function removerHorario(element) {
+    const horariosContainer = document.getElementById('horarios');
+    const horarioRemovido = element.parentNode;
+    horariosContainer.removeChild(horarioRemovido);
+}
