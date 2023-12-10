@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cadastro.css">
+    <script src="./script/script.js"></script> 
 
     <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
     <title>Cadastro</title>
 </head>
 <body>
+
     <header>
         <div id="logo">
             <div>
@@ -56,14 +58,25 @@
                 <label for="regiao">Região da Cidade:</label>
                 <input type="text" id="regiao" name="regiao" required>
         
-                <label for="principaisPontos">Pontos de Parada:</label>
-                <textarea id="principaisPontos" placeholder="Insira aqui cada ponto de parada." name="principaisPontos" rows="5" required></textarea>
+                <div class="container-p">
+                <label>Pontos de parada:</label>
+                <div id="paradas">
+                    <div class="parada-container">
+                        <input type="text" name="parada[]" placeholder="Digite o ponto de parada">
+                        <button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
+                    </div>
+                </div>
+            
+                <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
+            </div>
         
                 <label for="horarios">Horários de Saída:</label>
                 <textarea placeholder="Insira aqui cada horário de saída." name="horarios" rows="3" required></textarea>
         
                 <button type="submit">Cadastrar</button>
+
             </form>
+
         </div>
     </section>
     <!-- FIM DO CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
@@ -96,5 +109,8 @@
             </p>
         </div>
     </footer>
+
+    
+
 </body>
 </html>
