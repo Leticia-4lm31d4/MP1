@@ -72,3 +72,15 @@ button:hover {
 #mensagemErroRegiao, #mensagemErroNomeLinha, #mensagemErroParadas, #mensagemErroHorario {
     color: #f44336;
 }
+
+.container-p {
+    padding-bottom: 8px;
+}
+
+#paradas input {
+    width: 500px;
+}
+
+#horarios input {
+    width: 260px;
+}

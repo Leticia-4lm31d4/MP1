@@ -62,11 +62,11 @@
                 <div id="mensagemErroRegiao"></div>
         
                 <div class="container-p">
-                <label>Pontos de parada:</label>
-                <div id="paradas">
-                    <div class="parada-container">
-                        <input type="text" id="pontoParada" name="parada[]" placeholder="Digite o ponto de parada">
-                        <button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
+                    <label>Pontos de parada:</label>
+                    <div id="paradas">
+                        <div class="parada-container">
+                            <input type="text" id="pontoParada" name="parada[]" placeholder="Digite um ponto de parada">
+                            <button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
                     </div>
                 </div>
 
@@ -76,17 +76,17 @@
                 </div>
         
                 <div class="container-p">
-                <div id="horarios">
-                <label for="horarios">Horários de Saída:</label>
-                    <div class="horario-container">
-                        <input type="text" id="horario" name="horario[]" placeholder="Digite o horário" required>
-                        <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                    <div id="horarios">
+                        <label for="horarios">Horários de Saída:</label>
+                        <div class="horario-container">
+                            <input type="text" id="horario" name="horario[]" placeholder="Digite um horário. Por exemplo: 12:00" required>
+                            <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                        </div>
                     </div>
-                </div>
 
-                <div id="mensagemErroHorario"></div>
+                    <div id="mensagemErroHorario"></div>
 
-                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+                    <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
                 </div>
 
                 <button type="submit">Cadastrar</button>
