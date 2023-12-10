@@ -53,6 +53,8 @@
             <form>
                 <label for="nomeLinha">Nome da linha:</label>
                 <input type="text" id="nomeLinha" name="nomeLinha" placeholder="Insira o nome da linha. Por exemplo: 27 - UFSCar" required>
+
+                <div id="mensagemErroNomeLinha"></div>
         
                 <label for="regiao">Região da cidade:</label>
                 <input type="text" id="regiao" placeholder="Insira a região do ponto inicial da linha. Por exemplo: Sul" name="regiao" required>
@@ -83,7 +85,9 @@
                     <div id="mensagemErroHorario"></div>
 
                     <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
-                </div><button id="enviar" type="submit">Enviar</button>
+                </div>
+                
+                <button id="enviar" type="submit">Enviar</button>
             </div>
             
             </form>
