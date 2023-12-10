@@ -68,9 +68,11 @@ function validarRegiao(regiao) {
 }
 
 function validarPontoDeParada(pontoDeParada) {
-    return /^[a-zA-Z]+$/.test(pontoDeParada);
+    // Precisa aceitar letras (incluindo acentuadas) e espaços
+    return /^[a-zA-ZÀ-ÖØ-öø-ÿ\s]+$/.test(pontoDeParada);
 }
 
 function validarHorarios(horarios) {
+    // Aceita apenas horários existentes, então 33:99 não passa por exemplo
     return /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/.test(horarios);
 }
