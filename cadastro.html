@@ -21,7 +21,7 @@
     <header>
         <div id="logo">
             <div>
-                <img src="./Assets/bee-origami-paper-svgrepo-com.svg" alt="abelha de origami" height="32">
+                <img src="./Assets/bee-origami-paper-svgrepo-com.svg" alt="abelha de origami" height="42">
             </div>
 
             <div>
@@ -52,18 +52,17 @@
 
         <div class="container">
             <form>
-                <label for="nomeLinha">Nome da Linha:</label>
-                <input type="text" id="nomeLinha" name="nomeLinha" required>
+                <label for="nomeLinha">Nome da linha:</label>
+                <input type="text" id="nomeLinha" name="nomeLinha" placeholder="Insira o nome da linha. Por exemplo: 27 - UFSCar" required>
         
-                <label for="regiao">Região da Cidade:</label>
+                <label for="regiao">Região da cidade:</label>
                 <input type="text" id="regiao" placeholder="Insira a região do ponto inicial da linha. Por exemplo: Sul" name="regiao" required>
         
                 <div class="container-p">
                 <label>Pontos de parada:</label>
                 <div id="paradas">
                     <div class="parada-container">
-                        <input type="text" name="parada[]" placeholder="Digite o ponto de parada">
-                        <button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
+                        <input type="text" name="parada[]" placeholder="Digite o ponto de parada" required><button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
                     </div>
                 </div>
             
@@ -72,15 +71,14 @@
         
                 <div class="container-p">
                 <div id="horarios">
-                <label for="horarios">Horários de Saída:</label>
+                <br><label for="horarios">Horários de saída:</label>
                     <div class="horario-container">
-                        <input type="text" name="horario[]" placeholder="Digite o horário" required>
-                        <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                        <input type="text" name="horario[]" placeholder="Digite o horário" required><button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
                     </div>
                 </div>
-                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button><br>
             </div>
-                <button type="submit">Cadastrar</button>
+            <button id="enviar" type="submit">Enviar</button>
             </form>
         </div>
     </section>
