@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cadastro.css">
-    <script src="./script/script.js"></script> 
 
     <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
     <title>Cadastro</title>
@@ -57,28 +56,36 @@
         
                 <label for="regiao">Região da cidade:</label>
                 <input type="text" id="regiao" placeholder="Insira a região do ponto inicial da linha. Por exemplo: Sul" name="regiao" required>
+
+                <div id="mensagemErroRegiao"></div>
         
                 <div class="container-p">
-                <label>Pontos de parada:</label>
-                <div id="paradas">
-                    <div class="parada-container">
-                        <input type="text" name="parada[]" placeholder="Digite o ponto de parada" required><button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
+                    <label>Pontos de parada:</label>
+                    <div id="paradas">
+                        <div class="parada-container">
+                            <input type="text" id="pontoParada" name="parada[]" placeholder="Digite um ponto de parada"><button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
                     </div>
                 </div>
+
+                <div id="mensagemErroParadas"></div>
             
                 <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
                 </div>
         
                 <div class="container-p">
-                <div id="horarios">
-                <br><label for="horarios">Horários de saída:</label>
-                    <div class="horario-container">
-                        <input type="text" name="horario[]" placeholder="Digite o horário" required><button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                    <div id="horarios">
+                        <label for="horarios">Horários de Saída:</label>
+                        <div class="horario-container">
+                            <input type="text" id="horario" name="horario[]" placeholder="Digite um horário. Por exemplo: 12:00" required><button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                        </div>
                     </div>
-                </div>
-                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button><br>
+
+                    <div id="mensagemErroHorario"></div>
+
+                    <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+                </div><button id="enviar" type="submit">Enviar</button>
             </div>
-            <button id="enviar" type="submit">Enviar</button>
+            
             </form>
         </div>
     </section>
@@ -112,6 +119,10 @@
             </p>
         </div>
     </footer>
+
+    <!-- IMPORTAÇÕES DOS JSs -->
+    <script src="./script/camposForm.js"></script> 
+    <script src="./script/inputValidacao.js"></script>
 
 </body>
 </html>

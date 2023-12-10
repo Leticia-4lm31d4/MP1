@@ -50,8 +50,14 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #4caf50;
+.btn-remove:hover {
+    background-color: #d1362b;
+    transition: all 0.25s;
+}
+
+.btn-add:hover {
+    background-color: #3d9c40;
+    transition: all 0.25s;
 }
 
 #enviar{
@@ -67,6 +73,7 @@ button:hover {
     margin: 0 auto;
     text-align: center;
     display: block;
+    font-weight: bolder;
 
     &::after {
         content: ">";
@@ -80,7 +87,7 @@ button:hover {
     }
 
     &:hover {
-        background: #ffd82b;
+        background: #fad842;
         transition: all 0.5s;
         padding: 1rem 3rem 1rem 1rem;
 
@@ -91,7 +98,6 @@ button:hover {
         }
     }
 }
-
 
 .btn-add {
     display: flex;
@@ -114,4 +120,20 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
     margin-left: 8px;
+}
+
+#mensagemErroRegiao, #mensagemErroNomeLinha, #mensagemErroParadas, #mensagemErroHorario {
+    color: #f44336;
+}
+
+.container-p {
+    padding-bottom: 8px;
+}
+
+#paradas input {
+    width: 525px;
+}
+
+#horarios input {
+    width: 525px;
 }

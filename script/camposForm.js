@@ -6,7 +6,7 @@ function adicionarParada() {
     const inputParada = document.createElement('input');
     inputParada.type = 'text';
     inputParada.name = 'parada[]';
-    inputParada.placeholder = 'Digite o ponto de parada';
+    inputParada.placeholder = 'Digite um ponto de parada';
 
     const btnRemover = document.createElement('button');
     btnRemover.type = 'button';
@@ -36,7 +36,7 @@ function adicionarHorario() {
     const inputHorario = document.createElement('input');
     inputHorario.type = 'text';
     inputHorario.name = 'horario[]';
-    inputHorario.placeholder = 'Digite o horário';
+    inputHorario.placeholder = 'Digite um horário';
     inputHorario.required = true;
 
     const btnRemover = document.createElement('button');
