@@ -12,24 +12,24 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const nomeLinha = document.getElementById('nomeLinha').value;
     const regiao = document.getElementById('regiao').value;
     const pontoDeParada = document.getElementById('pontoParada').value;
-    const horarios = document.getElementById('horarios').value;
+    const horario = document.getElementById('horario').value;
 
     // Realiza as validações
     const nomeLinhaValido = validarNomeLinha(nomeLinha);
     const regiaoValida = validarRegiao(regiao);
     const pontoDeParadaValido = validarPontoDeParada(pontoDeParada);
-    const horariosValidos = validarHorarios(horarios);
+    const horariosValidos = validarHorarios(horario);
 
     // Exibe as mensagens de erro conforme necessário
     if (!nomeLinhaValido) {
         mensagemErroNomeLinha.textContent = 'Formato inválido! Use o formato correto, por exemplo: 301 - Nome da Linha ou 10 - Nome Linha.';
     } else if (!regiaoValida) {
         mensagemErroRegiao.textContent = 'Formato inválido! Informe uma das regiões: Sul, Norte, Leste, Oeste.';
-    } else if (!horariosValidos) {
-        mensagemErroHorario.textContent = 'Formato inválido! Utilize o formato HH:mm.';
     } else if (!pontoDeParadaValido) {
         mensagemErroParadas.textContent = 'Formato inválido para o ponto de parada. Use apenas letras.';
-    }
+    } else if (!horariosValidos) {
+        mensagemErroHorario.textContent = 'Formato inválido! Utilize o formato HH:mm.';
+    } 
     else {
         // Se todos os campos são válidos, limpe a mensagem de erro
         mensagemErroNomeLinha.textContent = '';
@@ -50,7 +50,7 @@ document.getElementById('regiao').addEventListener('input', function() {
     mensagemErroRegiao.textContent = '';
 });
 
-document.getElementById('horarios').addEventListener('input', function() {
+document.getElementById('horario').addEventListener('input', function() {
     mensagemErroHorario.textContent = '';
 });
 

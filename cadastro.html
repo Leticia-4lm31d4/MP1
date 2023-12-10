@@ -53,18 +53,24 @@
             <form>
                 <label for="nomeLinha">Nome da Linha:</label>
                 <input type="text" id="nomeLinha" name="nomeLinha" required>
+
+                <div id="mensagemErroNomeLinha"></div>
         
                 <label for="regiao">Região da Cidade:</label>
                 <input type="text" id="regiao" placeholder="Insira a região do ponto inicial da linha. Por exemplo: Sul" name="regiao" required>
+
+                <div id="mensagemErroRegiao"></div>
         
                 <div class="container-p">
                 <label>Pontos de parada:</label>
                 <div id="paradas">
                     <div class="parada-container">
-                        <input type="text" name="parada[]" placeholder="Digite o ponto de parada">
+                        <input type="text" id="pontoParada" name="parada[]" placeholder="Digite o ponto de parada">
                         <button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
                     </div>
                 </div>
+
+                <div id="mensagemErroParadas"></div>
             
                 <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
                 </div>
@@ -73,12 +79,16 @@
                 <div id="horarios">
                 <label for="horarios">Horários de Saída:</label>
                     <div class="horario-container">
-                        <input type="text" name="horario[]" placeholder="Digite o horário" required>
+                        <input type="text" id="horario" name="horario[]" placeholder="Digite o horário" required>
                         <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
                     </div>
                 </div>
+
+                <div id="mensagemErroHorario"></div>
+
                 <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
-            </div>
+                </div>
+
                 <button type="submit">Cadastrar</button>
             </form>
         </div>
@@ -115,7 +125,7 @@
     </footer>
 
     <!-- IMPORTAÇÕES DOS JSs -->
-    <script src="./script/script.js"></script> 
+    <script src="./script/camposForm.js"></script> 
     <script src="./script/inputValidacao.js"></script>
 
 </body>
