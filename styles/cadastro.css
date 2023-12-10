@@ -68,3 +68,7 @@ button:hover {
     cursor: pointer;
     margin-left: 8px;
 }
+
+#mensagemErroRegiao, #mensagemErroNomeLinha, #mensagemErroParadas, #mensagemErroHorario {
+    color: #f44336;
+}

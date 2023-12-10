@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cadastro.css">
-    <script src="./script/script.js"></script> 
 
     <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
     <title>Cadastro</title>
@@ -68,16 +67,20 @@
                 </div>
             
                 <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
-            </div>
+                </div>
         
+                <div class="container-p">
+                <div id="horarios">
                 <label for="horarios">Horários de Saída:</label>
-                <textarea placeholder="Digite cada horáiro de saída separados por vírgula. Por exemplo:
-08:00, 10:00, 23:00" name="horarios" rows="3" required></textarea>
-        
+                    <div class="horario-container">
+                        <input type="text" name="horario[]" placeholder="Digite o horário" required>
+                        <button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                    </div>
+                </div>
+                <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+            </div>
                 <button type="submit">Cadastrar</button>
-
             </form>
-
         </div>
     </section>
     <!-- FIM DO CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
@@ -111,7 +114,9 @@
         </div>
     </footer>
 
-    
+    <!-- IMPORTAÇÕES DOS JSs -->
+    <script src="./script/script.js"></script> 
+    <script src="./script/inputValidacao.js"></script>
 
 </body>
 </html>
