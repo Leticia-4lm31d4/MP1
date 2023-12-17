@@ -1,7 +1,7 @@
 footer {
     background-color: #020202ff;
     min-height: 260px;
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
   
     display: flex;

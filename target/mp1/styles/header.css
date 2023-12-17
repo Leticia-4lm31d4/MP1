@@ -134,3 +134,11 @@ header nav a.active,
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#controle-footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
